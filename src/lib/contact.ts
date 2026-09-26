@@ -1,4 +1,4 @@
-const configuredNumber = import.meta.env.VITE_BERIZU_PHONE || "";
+const configuredNumber = import.meta.env["VITE_BERIZU_PHONE"] || "";
 export const contactNumber = configuredNumber.replace(/\D/g, "");
 export const phoneHref = contactNumber ? `tel:+${contactNumber}` : "/contact";
 export function whatsappHref(message: string) {

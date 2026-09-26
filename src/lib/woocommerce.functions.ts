@@ -38,7 +38,12 @@ function mapProduct(product: WooProduct): Vehicle {
     regularPrice: product.regular_price || product.price || "",
     description: plainText(product.description),
     shortDescription: plainText(product.short_description),
-    images: (product.images || []).map((image) => ({ src: image.src, alt: image.alt || product.name, thumbnail: image.thumbnail, srcset: image.srcset })),
+    images: (product.images || []).map((image) => ({
+      src: image.src,
+      alt: image.alt || product.name,
+      ...(image.thumbnail ? { thumbnail: image.thumbnail } : {}),
+      ...(image.srcset ? { srcset: image.srcset } : {}),
+    })),
     categories: product.categories || [],
     attributes: Object.fromEntries((product.attributes || []).map((attribute) => [attribute.name.toLowerCase(), attribute.options?.join(", ") || ""])),
     featured: Boolean(product.featured),
