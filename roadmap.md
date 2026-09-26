@@ -1,0 +1,5 @@
+- [x] Connect WooCommerce inventory
+- [ ] Build shared design system and site shell
+- [ ] Build homepage and inventory discovery
+- [ ] Build vehicle detail, brands, financing, and contact pages
+- [ ] Verify desktop and mobile enquiry flows
