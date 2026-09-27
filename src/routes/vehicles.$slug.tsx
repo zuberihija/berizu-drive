@@ -51,7 +51,7 @@ function VehiclePage() {
     <PageShell>
       <section className="page-wrap grid gap-12 pt-32 lg:grid-cols-[1.15fr_.85fr] lg:pt-40">
         <VehicleGallery vehicle={vehicle} />
-        <div>
+        <div className="min-w-0">
           <p className="eyebrow">{vehicle.categories[0]?.name || "Vehicle"}</p>
           <h1 className="mt-3 font-display text-4xl font-semibold uppercase leading-tight md:text-5xl">{vehicle.name}</h1>
           <p className="mt-5 font-display text-3xl font-bold text-primary">{formatPrice(vehicle.price)}</p>
