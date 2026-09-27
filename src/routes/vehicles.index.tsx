@@ -4,8 +4,8 @@ import { ContactCTA, VehicleFilters } from "@/components/automotive/VehicleSecti
 import { getVehicles } from "@/lib/woocommerce.functions";
 
 export const Route = createFileRoute("/vehicles/")({
-  validateSearch: (search: Record<string, unknown>) => ({
-    brand: typeof search.brand === "string" ? search.brand : undefined,
+  validateSearch: (search: Record<string, unknown>): { brand?: string } => ({
+    ...(typeof search["brand"] === "string" ? { brand: search["brand"] } : {}),
   }),
   head: () => ({
     meta: [
