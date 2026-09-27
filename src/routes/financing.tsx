@@ -21,12 +21,10 @@ export const Route = createFileRoute("/financing")({
 
 const steps = [
   [Banknote, "Choose your vehicle", "Pick any vehicle from our live inventory and tell us your budget."],
-  [FileTextIcon, "Share your details", "We guide you through a simple application with our banking partners."],
+  [FileText, "Share your details", "We guide you through a simple application with our banking partners."],
   [BadgeCheck, "Get approved", "Financing options of up to 90% with clear, transparent terms."],
   [Handshake, "Drive away", "Complete handover and enjoy support that continues beyond the sale."],
 ] as const;
-
-import { FileText as FileTextIcon } from "lucide-react";
 
 function FinancingPage() {
   return (
