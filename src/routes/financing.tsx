@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, BadgeCheck, Banknote, Handshake } from "lucide-react";
+import { ArrowRight, BadgeCheck, Banknote, FileText, Handshake } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { PageShell } from "@/components/automotive/SiteShell";
 import { ContactCTA, SectionHeading } from "@/components/automotive/VehicleSections";
