@@ -1,5 +1,6 @@
 - [x] Connect WooCommerce inventory
-- [ ] Build shared design system and site shell
-- [ ] Build homepage and inventory discovery
-- [ ] Build vehicle detail, brands, financing, and contact pages
-- [ ] Verify desktop and mobile enquiry flows
+- [x] Build shared design system and site shell
+- [x] Build homepage and inventory discovery
+- [x] Build vehicle detail, brands, financing, and contact pages
+- [x] Verify desktop and mobile enquiry flows
+- [ ] Set VITE_BERIZU_PHONE to the real Berizu number (enquiry buttons fall back to /contact until then)
